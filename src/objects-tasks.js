@@ -129,7 +129,7 @@ function makeImmutable(obj) {
  *    makeWord({ H:[0], e: [1], l: [2, 3, 8], o: [4, 6], W:[5], r:[7], d:[9]}) => 'HelloWorld'
  */
 function makeWord(/* lettersObject */) {
-
+  throw new Error('Not implemented');
 }
 
 /**
@@ -165,11 +165,11 @@ function sellTickets(/* queue */) {
  */
 function Rectangle(width, height) {
   return {
-  width,
-  height,
-   getArea () {
-    return this.width * this.height;
-   },
+    width,
+    height,
+    getArea() {
+      return this.width * this.height;
+    },
   };
 }
 
